@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<title>Pups & Cups</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles-contact.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">>
+<style>
+body, html {
+  height: 100%;
+  font-family: "Playfair Display", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/Honey_Flat_White1.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">LINKS</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottommiddle w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">OPEN 6AM - 3PM</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Pups and Cups<br></span>
+  </div>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+    
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT US</span></h5>
+    <img src="images/asset2.png" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p>We are a local dog café located in the San Francisco Bay Area that serves specialty-roasted coffee and features adoptable dogs from San Francisco SPCA shelters once a week. Ten percent of proceeds from the coffee shop go towards supporting animal shelters in the Bay Area.</p>
+    <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+</div>
+
+<!-- Links Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+   
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">LINKS</span></h5>
+      <nav>
+        <ul class="circle">
+          <li><a href=ChristineLee_Brochure.pdf> FoCo Brochure </a></li>
+          <li><a href=http://www.christinejlee.weebly.com target=”_blank”> Portfolio </a></li>
+          <li><a href=mailto:christine.jlee3@gmail.com> Email </a></li>
+        </ul>
+      </nav>
+      
+<!-- End page content -->
+</div>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
